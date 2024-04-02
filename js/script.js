@@ -65,8 +65,8 @@ const run1234 = async () =>{
 
 
   } catch (error) {
-    console.error("Error:", error);
     console.error("PLEASE USE YOUR OWN API KEY");
+    console.error("Error:", error);
   } finally {
     // Hide loader
     document.getElementById("loader").style.display = "none";
