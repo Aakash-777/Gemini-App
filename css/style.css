@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.page{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+}
+#particles-js{
+    position: absolute;
+    background-color: #ffffff;
+    height: 99%;
+    width: 100%;
+}
+.page .main{
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .heading{
+    font-weight: 600;
+    font-size: 60px;
+    cursor: default;
+    
+}
+.input-box{
+    /* border: 1px solid green; */
+    height: 60px;
+    width: 62%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    padding: 4px;
+    /* border: 1px solid gray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: white;
+    
+}
+.input-box input{
+    height: 99%;
+    width: 82%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0px 15px;
+    
+}
+.input-box button{
+    height: 99%;
+    width: 18%;
+    border-radius: 15px;
+    background: black;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+.input-box button:hover{
+    background: linear-gradient(45deg, #BD46F8, transparent) #6255DA;
+}
+#loader{
+    position: absolute;
+    top: 60%;
+    /* border: 1px solid black; */
+    height: 70px;
+    display: none;
+    /* display: flex; */
+    
+    
+    justify-content: center;
+    align-items: center;
+}
+.result-box{
+    margin-top: 30px;
+    height: 300px;
+    border: 1px solid gray;
+    width: 75%;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    overflow-y: scroll;
+}
+.result-box::-webkit-scrollbar {
+    display: none;
+}
+
+#res{
+    font-size: 20px;
+    opacity: 0;
+}
+
+
+
+
+
+
