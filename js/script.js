@@ -1,6 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
 
+console.log("PLEASE USE YOUR OWN API KEY");
 const response = await fetch('js/API_KEY.txt');
 const API_KEY = await response.text();
 
@@ -66,7 +67,6 @@ const run1234 = async () =>{
 
   } catch (error) {
     console.error("Error:", error);
-    console.log("PLEASE USE YOUR OWN API KEY");
   } finally {
     // Hide loader
     document.getElementById("loader").style.display = "none";
