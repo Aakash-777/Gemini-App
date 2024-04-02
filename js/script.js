@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { HarmBlockThreshold, HarmCategory } from "@google/generative-ai";
 
-const response = await fetch('./js/API_KEY.txt');
+const response = await fetch('js/API_KEY.txt');
 const API_KEY = await response.text();
 
 const genAI = new GoogleGenerativeAI(API_KEY);
