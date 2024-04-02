@@ -80,7 +80,6 @@ const run1234 = async () =>{
 //     }, 200);
 // }
 
-
 const fetch_input = () =>{
     const prompt = document.getElementById("prompt").value;
     console.log(prompt);
@@ -88,4 +87,10 @@ const fetch_input = () =>{
 }
 
 document.getElementById("send-prompt").addEventListener("click", run1234);
+
+document.getElementById("prompt").addEventListener('keydown', function(event) {
+  if (event.keyCode === 13) {
+    document.getElementById("send-prompt").click();
+  }
+});
 
